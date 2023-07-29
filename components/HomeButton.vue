@@ -67,6 +67,7 @@ export default {
   position: relative;
   flex-direction: column;
   text-align: center;
+  min-width: 100px;
   width: 100%;
   height: 100px;
   border-radius: 10px;
