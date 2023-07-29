@@ -62,13 +62,11 @@ export default {
   },
 }
 </script>
-<style>
+<style >
 .button {
-  display: flex;
   position: relative;
   flex-direction: column;
   text-align: center;
-  justify-content: start;
   width: 100%;
   height: 100px;
   border-radius: 10px;

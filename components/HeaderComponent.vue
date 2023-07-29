@@ -1,6 +1,6 @@
 <template>
     <v-header app>
-      <v-row class="primary px-4 pt-4 pb-4">
+      <v-row class="primary px-4 pt-4">
         <v-col cols="10">
           <v-img
           :width="190"

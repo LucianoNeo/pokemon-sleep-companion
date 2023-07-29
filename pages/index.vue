@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" align="center">
+  <v-row justify="center" align="center" class="mt-8">
     <v-container >
       <v-row class="mt-4">
         <v-col cols="4" class="d-flex justify-center align-center">
