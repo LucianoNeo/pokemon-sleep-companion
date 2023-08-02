@@ -1,10 +1,10 @@
 <template>
-  <div class="button" :style="buttonStyle">
+  <button class="button" :style="buttonStyle" @click="$router.push(goto)">
     <div class="buttonContainer">
       <img :src="buttonImg"/>
       <span class="buttonText">{{ buttonText }}</span>
     </div>
-  </div>
+  </button>
 </template>
 
 <script>
@@ -37,6 +37,9 @@ export default {
       default: '1',
       required: true,
     },
+    goto: {
+      type: String,
+    },
   },
   computed: {
     buttonStyle() {
@@ -67,6 +70,8 @@ export default {
   position: relative;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   min-width: 100px;
   width: 100%;
   height: 100px;

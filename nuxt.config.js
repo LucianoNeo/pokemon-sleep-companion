@@ -6,7 +6,7 @@ export default {
     titleTemplate: '%s - poke-sleep',
     title: 'Pokémon Sleep Companion',
     htmlAttrs: {
-      lang: 'pt-br',
+      lang: 'pt-BR',
     },
     meta: [
       { charset: 'utf-8' },
@@ -20,9 +20,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -32,11 +30,26 @@ export default {
     '@nuxtjs/vuetify',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-  ],
+  modules: ["@nuxtjs/axios", "@nuxtjs/i18n"],
+
+  i18n: {
+    strategy: "no_prefix",
+    locales: [
+      {
+        code: "en-US",
+        file: "en-US.js",
+        name: "English",
+      },
+      {
+        code: "pt-BR",
+        file: "pt-BR.js",
+        name: "Português",
+      },
+    ],
+    lazy: true,
+    langDir: "lang/",
+    defaultLocale: "pt-BR",
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -58,6 +71,9 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
+          grass: '#4D9358',
+          fire: '#D8483F',
+          water: '#458EC3',
         },
       },
     },

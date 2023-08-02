@@ -1,0 +1,246 @@
+import berries from './berries'
+import ingredients from './ingredients'
+import islands from './islands'
+import sleepStyles from './sleepStyles'
+import sleepTypes from './sleepType'
+import specialities from './specialities'
+import types from './types'
+
+const pokemonList = [
+  {
+    number: '001',
+    name: 'bulbasaur',
+    img: '/pokemon/1.png',
+    type: types.grass.name,
+    sleepType: sleepTypes.dozing,
+    speciality: specialities.ingredients,
+    location: islands.greenGrassIsland,
+    baseFrequency: '01:13:20',
+    carryLimit: 11,
+    frienshipPoints: 5,
+    recruitXP: 18,
+    recruitShards: 39,
+    berry: berries.durin.name,
+    ingredients: [
+      ingredients.honey.name,
+      ingredients.softPotato.name,
+      ingredients.snoozyTomato.name,
+    ],
+    sleepStyles: [
+      sleepStyles.sunbathing.name,
+      sleepStyles.sturdy.name,
+      sleepStyles.vinesOut.name,
+      sleepStyles.atopBelly.name,
+    ]
+  },
+  {
+    number: '002',
+    name: 'ivysaur',
+    img: '/pokemon/2.png',
+    type: types.grass.name,
+    sleepType: sleepTypes.dozing,
+    speciality: specialities.ingredients,
+    location: islands.greenGrassIsland,
+    baseFrequency: '01:13:20',
+    carryLimit: 11,
+    frienshipPoints: 5,
+    recruitXP: 18,
+    recruitShards: 39,
+    berry: berries.durin.name,
+    ingredients: [
+      ingredients.honey.name,
+      ingredients.softPotato.name,
+      ingredients.snoozyTomato.name,
+    ],
+    sleepStyles: [
+      sleepStyles.sunbathing.name,
+      sleepStyles.sturdy.name,
+      sleepStyles.vinesOut.name,
+      sleepStyles.atopBelly.name,
+    ]
+  },
+  {
+    number: '003',
+    name: 'venusaur',
+    img: '/pokemon/3.png',
+    type: types.grass.name,
+    sleepType: sleepTypes.dozing,
+    speciality: specialities.ingredients,
+    location: islands.greenGrassIsland,
+    baseFrequency: '01:13:20',
+    carryLimit: 11,
+    frienshipPoints: 5,
+    recruitXP: 18,
+    recruitShards: 39,
+    berry: berries.durin.name,
+    ingredients: [
+      ingredients.honey.name,
+      ingredients.softPotato.name,
+      ingredients.snoozyTomato.name,
+    ],
+    sleepStyles: [
+      sleepStyles.sunbathing.name,
+      sleepStyles.sturdy.name,
+      sleepStyles.vinesOut.name,
+      sleepStyles.atopBelly.name,
+    ]
+  },
+  {
+    number: '004',
+    name: 'charmander',
+    img: '/pokemon/4.png',
+    type: types.fire.name,
+    sleepType: sleepTypes.dozing,
+    speciality: specialities.ingredients,
+    location: islands.greenGrassIsland,
+    baseFrequency: '01:13:20',
+    carryLimit: 11,
+    frienshipPoints: 5,
+    recruitXP: 18,
+    recruitShards: 39,
+    berry: berries.durin.name,
+    ingredients: [
+      ingredients.honey.name,
+      ingredients.softPotato.name,
+      ingredients.snoozyTomato.name,
+    ],
+    sleepStyles: [
+      sleepStyles.sunbathing.name,
+      sleepStyles.sturdy.name,
+      sleepStyles.vinesOut.name,
+      sleepStyles.atopBelly.name,
+    ]
+  },
+  {
+    number: '005',
+    name: 'charmeleon',
+    img: '/pokemon/5.png',
+    type: types.fire.name,
+    sleepType: sleepTypes.dozing,
+    speciality: specialities.ingredients,
+    location: islands.greenGrassIsland,
+    baseFrequency: '01:13:20',
+    carryLimit: 11,
+    frienshipPoints: 5,
+    recruitXP: 18,
+    recruitShards: 39,
+    berry: berries.durin.name,
+    ingredients: [
+      ingredients.honey.name,
+      ingredients.softPotato.name,
+      ingredients.snoozyTomato.name,
+    ],
+    sleepStyles: [
+      sleepStyles.sunbathing.name,
+      sleepStyles.sturdy.name,
+      sleepStyles.vinesOut.name,
+      sleepStyles.atopBelly.name,
+    ]
+  },
+  {
+    number: '006',
+    name: 'charizard',
+    img: '/pokemon/6.png',
+    type: types.fire.name,
+    sleepType: sleepTypes.dozing,
+    speciality: specialities.ingredients,
+    location: islands.greenGrassIsland,
+    baseFrequency: '01:13:20',
+    carryLimit: 11,
+    frienshipPoints: 5,
+    recruitXP: 18,
+    recruitShards: 39,
+    berry: berries.durin.name,
+    ingredients: [
+      ingredients.honey.name,
+      ingredients.softPotato.name,
+      ingredients.snoozyTomato.name,
+    ],
+    sleepStyles: [
+      sleepStyles.sunbathing.name,
+      sleepStyles.sturdy.name,
+      sleepStyles.vinesOut.name,
+      sleepStyles.atopBelly.name,
+    ]
+  },
+  {
+    number: '007',
+    name: 'squirtle',
+    img: '/pokemon/7.png',
+    type: types.water.name,
+    sleepType: sleepTypes.dozing,
+    speciality: specialities.ingredients,
+    location: islands.greenGrassIsland,
+    baseFrequency: '01:13:20',
+    carryLimit: 11,
+    frienshipPoints: 5,
+    recruitXP: 18,
+    recruitShards: 39,
+    berry: berries.durin.name,
+    ingredients: [
+      ingredients.honey.name,
+      ingredients.softPotato.name,
+      ingredients.snoozyTomato.name,
+    ],
+    sleepStyles: [
+      sleepStyles.sunbathing.name,
+      sleepStyles.sturdy.name,
+      sleepStyles.vinesOut.name,
+      sleepStyles.atopBelly.name,
+    ]
+  },
+  {
+    number: '008',
+    name: 'wartortle',
+    img: '/pokemon/8.png',
+    type: types.water.name,
+    sleepType: sleepTypes.dozing,
+    speciality: specialities.ingredients,
+    location: islands.greenGrassIsland,
+    baseFrequency: '01:13:20',
+    carryLimit: 11,
+    frienshipPoints: 5,
+    recruitXP: 18,
+    recruitShards: 39,
+    berry: berries.durin.name,
+    ingredients: [
+      ingredients.honey.name,
+      ingredients.softPotato.name,
+      ingredients.snoozyTomato.name,
+    ],
+    sleepStyles: [
+      sleepStyles.sunbathing.name,
+      sleepStyles.sturdy.name,
+      sleepStyles.vinesOut.name,
+      sleepStyles.atopBelly.name,
+    ]
+  },
+  {
+    number: '009',
+    name: 'blastoise',
+    img: '/pokemon/9.png',
+    type: types.water.name,
+    sleepType: sleepTypes.dozing,
+    speciality: specialities.ingredients,
+    location: islands.greenGrassIsland,
+    baseFrequency: '01:13:20',
+    carryLimit: 11,
+    frienshipPoints: 5,
+    recruitXP: 18,
+    recruitShards: 39,
+    berry: berries.durin.name,
+    ingredients: [
+      ingredients.honey.name,
+      ingredients.softPotato.name,
+      ingredients.snoozyTomato.name,
+    ],
+    sleepStyles: [
+      sleepStyles.sunbathing.name,
+      sleepStyles.sturdy.name,
+      sleepStyles.vinesOut.name,
+      sleepStyles.atopBelly.name,
+    ]
+  },
+]
+
+export default pokemonList

@@ -1,13 +1,11 @@
 <template>
   <v-app dark>
     <HeaderComponent/>
-    <v-main>
-      <v-container>
+    <v-main class="accent mt-3">
         <Nuxt />
-      </v-container>
     </v-main>
     <v-footer class="justify-center">
-      <span>By LucianoNeo &copy; {{ new Date().getFullYear() }}</span>
+      <span>By LucianoNeo &copy; {{ new Date().getFullYear() }} v0.5</span>
     </v-footer>
   </v-app>
 </template>
