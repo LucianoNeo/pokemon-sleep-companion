@@ -1,6 +1,7 @@
 <template>
+  <button @click="$router.push('/pokemon/' + pokemonName)">
   <v-row class="px-3 font-weight-bold rounded-xl card my-2 mx-2" :class="pokemonType">
-    <v-col cols="8" class="d-flex flex-column justify-space-between card">
+    <v-col cols="8" class="d-flex flex-column justify-space-between card align-start">
       <span>#{{ pokemonNumber }}</span>
       <h2 class="text-uppercase">{{ pokemonName }}</h2>
     </v-col>
@@ -9,6 +10,7 @@
       <img :src="'/types/' + pokemonType + '.png'" class="typeImg" />
     </v-col>
   </v-row>
+</button>
 </template>
 
 <script>
@@ -51,6 +53,7 @@ export default {
 }
 
 .card {
+  width: 365px;
   height: 96px !important;
 }
 
