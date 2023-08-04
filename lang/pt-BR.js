@@ -12,5 +12,8 @@ export default {
   },
   skills:{
     ingredientMagnetS: 'Obtém 6 ingredientes escolhidos aleatoriamente.'
+  },
+  pokemonList:{
+    search: 'Filtre por nome, número, tipo, sleep type, especialidade, berry ou ingrediente'
   }
 };

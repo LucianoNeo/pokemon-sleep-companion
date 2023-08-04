@@ -11,7 +11,8 @@
         <v-text-field
           solo
           prepend-inner-icon="mdi-magnify"
-          placeholder="Digite para filtrar"
+          :placeholder="$t('pokemonList.search')"
+          v-model="searchText"
         />
         <v-row class="justify-center cardsContainer">
           <v-col
@@ -19,7 +20,7 @@
             sm="12"
             md="4"
             class="d-flex justify-center align-center"
-            v-for="(pokemon, index) in pokemonList"
+            v-for="(pokemon, index) in filteredPokemonList"
             :key="index"
           >
             <PokemonCard
@@ -41,7 +42,26 @@ export default {
   data() {
     return {
       pokemonList: pokemonList,
+      searchText: '',
     }
+  },
+  computed: {
+    filteredPokemonList() {
+      const searchText = this.searchText.toLowerCase().trim();
+      return this.pokemonList.filter((pokemon) => {
+        return (
+          pokemon.name.toLowerCase().includes(searchText) ||
+          pokemon.number.includes(searchText) ||
+          pokemon.type.name.toLowerCase().includes(searchText) ||
+          pokemon.sleepType.toLowerCase().includes(searchText) ||
+          pokemon.speciality.toLowerCase().includes(searchText) ||
+          pokemon.berry.name.toLowerCase().includes(searchText) ||
+          pokemon.ingredients.some((ingredient) =>
+            ingredient.name.toLowerCase().includes(searchText)
+          )
+        );
+      });
+    },
   },
 }
 </script>
