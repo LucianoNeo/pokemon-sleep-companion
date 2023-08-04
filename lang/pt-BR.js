@@ -17,6 +17,7 @@ export default {
     search: 'Filtre por nome, número, tipo, sleep type, especialidade, berry ou ingrediente'
   },
   pokemonDetails:{
+    sleepType: "Tipo de sono",
     type: "Tipo",
     shiny: "Shiny",
     helpingStats: "Status de Ajuda (Base)",

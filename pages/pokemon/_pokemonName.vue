@@ -1,21 +1,28 @@
 <template>
   <div class="mt-8">
-    <div class="align-center d-flex">
-      <v-btn plain @click="$router.push('/pokemon')">
-        <v-icon>mdi-arrow-left</v-icon>
-      </v-btn>
-      <h3 class="text-uppercase">{{ pokemon.name }}</h3>
+    <div class="align-center d-flex justify-space-between">
+      <div class="d-flex justify-center align-center">
+        <v-btn plain @click="$router.push('/pokemon')">
+          <v-icon>mdi-arrow-left</v-icon>
+        </v-btn>
+        <h3 class="text-uppercase zindex">{{ pokemon.name }}</h3>
+      </div>
+      <div class="d-flex flex-column justify-end align-end pr-6">
+        <span class="pr-2">{{
+          $t('pokemonDetails.sleepType')
+        }}</span>
+        <div class="sleepType" :class="pokemon.sleepType">
+          {{ $t('sleepTypes.' + pokemon.sleepType) }}
+        </div>
+      </div>
     </div>
     <div class="topBar align-center justify-center d-flex">
       <img :src="getPokemonImg" :alt="pokemon.name" class="pokemonImg" />
     </div>
-    <div class="topBar flex-column d-flex px-2 justify-center" :class="pokemon.type.name">
-      <div class="sleepType"
-      :class="pokemon.sleepType"
-      >
-      {{ $t('sleepTypes.' + pokemon.sleepType) }}
-
-      </div>
+    <div
+      class="flex-column d-flex px-8 justify-center py-2"
+      :class="pokemon.type.name"
+    >
       <div class="d-flex align-center justify-end">
         <span class="mr-2">{{ $t('pokemonDetails.type') }}</span>
         <v-tooltip bottom>
@@ -175,7 +182,7 @@ export default {
 </script>
 <style>
 .topBar {
-  height: 85px;
+  height: 30px;
 }
 .pokemonImg {
   object-fit: cover;
@@ -203,14 +210,18 @@ export default {
   font-size: 1.2rem;
 }
 
-.sleepType{
+.sleepType {
   display: flex;
+  min-width: 100px;
   padding: 10px;
   border-radius: 50px;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
   font-size: 1rem;
-  position: absolute;
+}
+
+.zindex {
+  z-index: 100;
 }
 </style>

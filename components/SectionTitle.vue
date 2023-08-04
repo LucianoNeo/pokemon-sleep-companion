@@ -1,5 +1,5 @@
 <template>
-  <div class="primary title py-2 px-10">
+  <div class="primary title py-2 px-6">
     <h3>{{ title }}</h3>
   </div>
 </template>

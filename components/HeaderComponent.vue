@@ -4,7 +4,7 @@
       <v-col cols="10">
         <v-img :width="130" cover src="/logo.svg" />
       </v-col>
-      <v-col cols="2" class="d-flex flex-column align-content-end align-end pr-6">
+      <v-col cols="2" class="d-flex flex-column align-content-end align-end">
         <button @click="changeLanguageTo('pt-BR')" >
           <img :class="{ active: currentLanguage === 'pt-BR' }" class="mb-4 rounded" width="36" src="/flags/BR.svg" />
         </button>
