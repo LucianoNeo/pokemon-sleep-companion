@@ -10,7 +10,7 @@ const ingredients =
     },
     snoozyTomato: {
       name: 'Snoozy Tomato',
-      img: '/ingredients/snoozyTomato.png',
+      img: '/ingredients/snoozytomato.png',
     },
   }
 
