@@ -15,5 +15,38 @@ export default {
   },
   pokemonList:{
     search: 'Filtre por nome, número, tipo, sleep type, especialidade, berry ou ingrediente'
+  },
+  pokemonDetails:{
+    type: "Tipo",
+    shiny: "Shiny",
+    helpingStats: "Status de Ajuda (Base)",
+    berry: "Fruta",
+    ingredients: "Ingredientes",
+    frequency: "Frequência",
+    carryLimit: "Limite de carga",
+    friendshipPoints: "Pontos de amizade",
+    recruitXP: "XP",
+    recruitShards: "Fragmentos",
+    mainSkill: "Habilidade Principal"
+  },
+  types: {
+    grass: "Grama",
+    fire: "Fogo",
+    water: "Água",
+    electric: "Elétrico",
+    bug: "Inseto",
+    normal: "Normal",
+    flying: "Voador",
+    poison: "Venenoso",
+    psychic: "Psíquico",
+    ground: "Terra",
+    rock: "Pedra",
+    steel: "Aço",
+    ice: "Gelo",
+    ghost: "Fantasma",
+    dragon: "Dragão",
+    dark: "Noturno",
+    fairy: "Fada",
   }
+
 };

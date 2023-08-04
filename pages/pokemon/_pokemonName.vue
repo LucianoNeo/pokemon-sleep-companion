@@ -14,12 +14,19 @@
       :class="pokemon.type.name"
     >
       <div class="d-flex align-center justify-end">
-        <span class="mr-2">Type</span>
-        <img
-          :src="'/types/' + pokemon.type.name + '.png'"
-          width="26"
-          height="26"
-        />
+        <span class="mr-2">{{ $t('pokemonDetails.type') }}</span>
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <img
+              :src="'/types/' + pokemon.type.name + '.png'"
+              width="26"
+              height="26"
+              v-bind="attrs"
+                  v-on="on"
+            />
+          </template>
+          <span>{{ $t('types.' + pokemon.type.name) }}</span>
+        </v-tooltip>
       </div>
       <div class="d-flex align-center justify-center mt-4">
         <span class="mr-2">Shiny</span>
@@ -34,10 +41,10 @@
       </div>
     </div>
     <div class="mb-4">
-      <SectionTitle title="Helping Stats (Base)" />
+      <SectionTitle :title="$t('pokemonDetails.helpingStats')" />
       <ul class="w-full mt-4">
         <li class="d-flex align-center justify-space-between pr-8 my-4">
-          <div class="chips green">Berry</div>
+          <div class="chips green">{{ $t('pokemonDetails.berry') }}</div>
           <div class="d-flex align-center">
             <v-tooltip bottom>
               <template v-slot:activator="{ on, attrs }">
@@ -57,7 +64,7 @@
         </li>
 
         <li class="d-flex align-center justify-space-between pr-8 my-4">
-          <div class="chips green">Ingredients</div>
+          <div class="chips green">{{ $t('pokemonDetails.ingredients') }}</div>
           <div
             class="d-flex align-center"
             v-for="(item, index) in pokemon.ingredients"
@@ -81,46 +88,50 @@
         </li>
 
         <li class="d-flex align-center justify-space-between pr-8 my-4">
-          <div class="chips green">Frequency</div>
+          <div class="chips green">{{ $t('pokemonDetails.frequency') }}</div>
           <div class="d-flex align-end flex-grow-1 justify-end pr-2">
             {{ pokemon.baseFrequency }}
           </div>
         </li>
 
         <li class="d-flex align-center justify-space-between pr-8 my-4">
-          <div class="chips green">Carry limit</div>
+          <div class="chips green">{{ $t('pokemonDetails.carryLimit') }}</div>
           <div class="d-flex align-end flex-grow-1 justify-end pr-2">
             {{ pokemon.carryLimit }}
           </div>
         </li>
 
         <li class="d-flex align-center justify-space-between pr-8 my-4">
-          <div class="chips green">Friendship Points</div>
+          <div class="chips green">
+            {{ $t('pokemonDetails.friendshipPoints') }}
+          </div>
           <div class="d-flex align-end flex-grow-1 justify-end pr-2">
             {{ pokemon.frienshipPoints }}
           </div>
         </li>
 
         <li class="d-flex align-center justify-space-between pr-8 my-4">
-          <div class="chips green">Recruit XP</div>
+          <div class="chips green">{{ $t('pokemonDetails.recruitXP') }}</div>
           <div class="d-flex align-end flex-grow-1 justify-end pr-2">
             {{ pokemon.recruitXP }}
           </div>
         </li>
 
         <li class="d-flex align-center justify-space-between pr-8 my-4">
-          <div class="chips green">Recruit Shards</div>
+          <div class="chips green">
+            {{ $t('pokemonDetails.recruitShards') }}
+          </div>
           <div class="d-flex align-end flex-grow-1 justify-end pr-2">
             {{ pokemon.recruitShards }}
           </div>
         </li>
       </ul>
 
-      <SectionTitle title="Main Skill" />
+      <SectionTitle :title="$t('pokemonDetails.mainSkill')" />
       <div class="d-flex align-center justify-center w-full px-4">
         <MainSkillCard
           :title="pokemon.skill.name"
-          :description="pokemon.skill.description"
+          :description="$t('skills.' + pokemon.skill.description)"
         />
       </div>
     </div>
