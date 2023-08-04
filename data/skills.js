@@ -1,12 +1,8 @@
-import { $t } from '@nuxtjs/i18n';
-
-const skills = [
-  {
-    ingredientMagnetS: {
-      name: 'Ingredient Magnet S',
-      description: $t('skills.ingredientMagnetS'),
-    },
+const skills = {
+  ingredientMagnetS: {
+    name: 'Ingredient Magnet S',
+    description: "Gets you 6 ingredients chosen at random."
   },
-]
+}
 
 export default skills

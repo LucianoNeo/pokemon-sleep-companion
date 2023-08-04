@@ -1,11 +1,11 @@
 <template>
   <v-app dark>
     <HeaderComponent/>
-    <v-main class="accent mt-3">
+    <v-main class="accent">
         <Nuxt />
     </v-main>
     <v-footer class="justify-center">
-      <span>By LucianoNeo &copy; {{ new Date().getFullYear() }} v0.5</span>
+      <span>By LucianoNeo &copy; {{ new Date().getFullYear() }} v0.65</span>
     </v-footer>
   </v-app>
 </template>
@@ -17,7 +17,6 @@ export default {
 </script>
 <style>
 html,body{
-  width: 100vw;
   background-color: #222;
   padding: 0;
   margin: 0;

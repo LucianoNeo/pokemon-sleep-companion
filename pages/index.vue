@@ -1,5 +1,5 @@
 <template>
-  <v-row class="justify-center align-center">
+  <div class="justify-center align-center">
     <v-container class="overflow-hidden">
       <v-row class="mt-4">
         <v-col cols="4" class="d-flex justify-center align-center">
@@ -44,7 +44,7 @@
       </v-row>
     </v-container>
     <v-col cols="12" sm="8" md="6"> </v-col>
-  </v-row>
+  </div>
 </template>
 
 <script>

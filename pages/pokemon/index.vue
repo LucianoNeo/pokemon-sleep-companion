@@ -1,13 +1,13 @@
 <template>
-  <v-container flat transparent class="mt-4">
-    <v-row>
+  <div class="mt-4 d-flex flex-column">
+    <div class="d-flex">
       <v-btn plain @click="$router.push('/')">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
       <h2>Pokémon</h2>
-    </v-row>
-    <v-row class="mt-4" align="center" justify="center">
-      <v-col cols="11">
+    </div>
+    <div class="mt-4 mx-0 d-flex justify-center align-center" >
+      <v-col cols="12">
         <v-text-field
           solo
           prepend-inner-icon="mdi-magnify"
@@ -25,14 +25,14 @@
             <PokemonCard
               :pokemonName="pokemon.name"
               :pokemonNumber="pokemon.number"
-              :pokemonType="pokemon.type"
+              :pokemonType="pokemon.type.name"
               :pokemonImg="pokemon.img"
             />
           </v-col>
         </v-row>
       </v-col>
-    </v-row>
-  </v-container>
+    </div>
+  </div>
 </template>
 
 <script>

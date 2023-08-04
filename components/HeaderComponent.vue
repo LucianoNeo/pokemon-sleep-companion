@@ -1,6 +1,6 @@
 <template>
   <header>
-    <v-row class="primary px-4 pt-4">
+    <div class="primary px-4 pt-4 d-flex">
       <v-col cols="10">
         <v-img :width="130" cover src="/logo.svg" />
       </v-col>
@@ -12,7 +12,7 @@
           <img class="rounded" width="36" src="/flags/US.svg" />
         </button>
       </v-col>
-    </v-row>
+    </div>
   </header>
 </template>
 <script>
@@ -25,4 +25,7 @@ export default {
 };
 </script>
 <style>
+header{
+  max-width: 100%;
+}
 </style>

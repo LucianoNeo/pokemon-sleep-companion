@@ -1,6 +1,6 @@
 <template>
-  <button @click="$router.push('/pokemon/' + pokemonName)">
-  <v-row class="px-3 font-weight-bold rounded-xl card my-2 mx-2" :class="pokemonType">
+  <button @click="$router.push('/pokemon/' + pokemonName)" class="font-weight-bold rounded-xl card my-2 mx-2 py-2 px-6" :class="pokemonType">
+  <v-row >
     <v-col cols="8" class="d-flex flex-column justify-space-between card align-start">
       <span>#{{ pokemonNumber }}</span>
       <h2 class="text-uppercase">{{ pokemonName }}</h2>
@@ -32,7 +32,7 @@ export default {
       type: String,
       required: true,
     },
-  },
+  }
 }
 </script>
 <style scoped>
@@ -40,7 +40,6 @@ export default {
   object-fit: cover;
   width: 80px;
   height: 100px;
-  transform: translateY(-20px);
 }
 .typeImg {
   object-fit: cover;
@@ -53,8 +52,7 @@ export default {
 }
 
 .card {
-  width: 365px;
-  height: 96px !important;
+  width: 100%;
 }
 
 .card:hover{
