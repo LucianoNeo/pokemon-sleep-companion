@@ -1,7 +1,7 @@
 const sleepTypes = {
-  dozing: 'Dozing',
-  snoozing: 'Snoozing',
-  slumbering: 'Slumbering',
+  dozing: 'dozing',
+  snoozing: 'snoozing',
+  slumbering: 'slumbering',
 }
 
 export default sleepTypes

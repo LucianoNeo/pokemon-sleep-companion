@@ -9,10 +9,13 @@
     <div class="topBar align-center justify-center d-flex">
       <img :src="getPokemonImg" :alt="pokemon.name" class="pokemonImg" />
     </div>
-    <div
-      class="topBar align-end justify-center flex-column d-flex px-8"
-      :class="pokemon.type.name"
-    >
+    <div class="topBar flex-column d-flex px-2 justify-center" :class="pokemon.type.name">
+      <div class="sleepType"
+      :class="pokemon.sleepType"
+      >
+      {{ $t('sleepTypes.' + pokemon.sleepType) }}
+
+      </div>
       <div class="d-flex align-center justify-end">
         <span class="mr-2">{{ $t('pokemonDetails.type') }}</span>
         <v-tooltip bottom>
@@ -22,13 +25,13 @@
               width="26"
               height="26"
               v-bind="attrs"
-                  v-on="on"
+              v-on="on"
             />
           </template>
           <span>{{ $t('types.' + pokemon.type.name) }}</span>
         </v-tooltip>
       </div>
-      <div class="d-flex align-center justify-center mt-4">
+      <div class="d-flex align-center justify-end mt-4">
         <span class="mr-2">Shiny</span>
         <button @click="toogleShiny">
           <img
@@ -172,7 +175,7 @@ export default {
 </script>
 <style>
 .topBar {
-  height: 95px;
+  height: 85px;
 }
 .pokemonImg {
   object-fit: cover;
@@ -198,5 +201,16 @@ export default {
   justify-content: center;
   font-weight: bolder;
   font-size: 1.2rem;
+}
+
+.sleepType{
+  display: flex;
+  padding: 10px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 1rem;
+  position: absolute;
 }
 </style>

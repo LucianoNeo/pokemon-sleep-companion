@@ -11,7 +11,7 @@ export default {
     shopItems: "Shop Itens"
   },
   skills:{
-    ingredientMagnetS: 'Obtém 6 ingredientes escolhidos aleatoriamente.'
+    ingredientMagnetS: 'Gets you 6 ingredients chosen at random.'
   },
   pokemonList:{
     search: 'Filter by name, number, type, sleep type, specialty, berry or ingredient'
@@ -47,5 +47,10 @@ export default {
     dragon: "Dragon",
     dark: "Dark",
     fairy: "Fairy",
+  },
+  sleepTypes:{
+    dozing: "Dozing",
+    snoozing: "Snoozing",
+    slumbering: "Slumbering"
   }
 };

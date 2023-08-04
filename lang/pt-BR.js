@@ -47,6 +47,11 @@ export default {
     dragon: "Dragão",
     dark: "Noturno",
     fairy: "Fada",
+  },
+  sleepTypes:{
+    dozing: "Cochilo",
+    snoozing: "Sonolento",
+    slumbering: "Adormecido"
   }
 
 };
