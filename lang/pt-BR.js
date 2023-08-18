@@ -53,6 +53,17 @@ export default {
     dozing: "Cochilo",
     snoozing: "Sonolento",
     slumbering: "Adormecido"
+  },
+  itemList: {
+    items: "Itens",
+    search: "Digite para filtrar pelo nome do item."
+  },
+  items:{
+    bonusBiscuit: "Um tratamento especial que tornará o Pokémon o mais amigável possível. Este biscoito dá três pontos de amizade.",
+    energyPillow: "Um travesseiro feito especialmente que restaura 50 de energia para um único Pokémon ajudante.",
+    dreamClusterL: "Uma massa misteriosa que brilha brilhantemente. Pode ser trocado por x Dream Shards. O valor varia de acordo com o Rank.",
+  },
+  sleepStyle:{
+    styles: "Estilos"
   }
-
 };

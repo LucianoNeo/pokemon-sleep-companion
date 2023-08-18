@@ -6,10 +6,10 @@
           <HomeButton buttonImg="/pokemon/1.png" buttonText="Pokémon" variant="3" goto="/pokemon"/>
         </v-col>
         <v-col cols="4" class="d-flex justify-center align-center">
-          <HomeButton buttonImg="/itens/ingredientticketl.png" :buttonText="$t('home.items')" variant="2"/>
+          <HomeButton buttonImg="/items/ingredientticketl.png" :buttonText="$t('home.items')" variant="2" goto="/items"/>
         </v-col>
         <v-col cols="4" class="d-flex justify-center align-center">
-          <HomeButton buttonImg="/itens/energypillow.png" :buttonText="$t('home.sleepStyles')" variant="3" />
+          <HomeButton buttonImg="/items/energypillow.png" :buttonText="$t('home.sleepStyles')" variant="3" goto="/sleepstyles"/>
         </v-col>
       </v-row>
 
@@ -27,7 +27,7 @@
 
       <v-row>
         <v-col cols="4" class="d-flex justify-center align-center">
-          <HomeButton buttonImg="/itens/subskillseed.png" :buttonText="$t('home.skills')" variant="7"/>
+          <HomeButton buttonImg="/items/subskillseed.png" :buttonText="$t('home.skills')" variant="7"/>
         </v-col>
         <v-col cols="4" class="d-flex justify-center align-center">
           <HomeButton buttonImg="/dishes/mixedcurry.png" :buttonText="$t('home.dishes')" variant="6"/>
@@ -39,7 +39,7 @@
 
       <v-row>
         <v-col cols="12" class="d-flex justify-center align-center">
-          <HomeButton buttonImg="/itens/goodcampticket.png" :buttonText="$t('home.shopItems')" variant="8"/>
+          <HomeButton buttonImg="/items/goodcampticket.png" :buttonText="$t('home.shopItems')" variant="8"/>
         </v-col>
       </v-row>
     </v-container>

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-8">
+  <section class="mt-8">
     <div class="align-center d-flex justify-space-between">
       <div class="d-flex justify-center align-center">
         <v-btn plain @click="$router.push('/pokemon')">
@@ -145,7 +145,7 @@
         />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

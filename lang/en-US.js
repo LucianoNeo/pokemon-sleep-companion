@@ -53,5 +53,17 @@ export default {
     dozing: "Dozing",
     snoozing: "Snoozing",
     slumbering: "Slumbering"
+  },
+  itemList: {
+    items: "Items",
+    search: "Type to filter by item name."
+  },
+  items:{
+    bonusBiscuit: "A special treat that will make a Pokémon as friendly as can be. This biscuit gives three friendship points.",
+    energyPillow: "A specially made pillow that restores 50 Energy to a single helper Pokémon.",
+    dreamClusterL: "A mysterious mass that sparkles brilliantly. It can be exchanged for ? Dream Shards.Value varies based on Rank.",
+  },
+  sleepStyle:{
+    styles: "Estilos"
   }
 };
