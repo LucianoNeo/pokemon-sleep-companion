@@ -65,6 +65,7 @@
             :location="item.location"
             :rewards="item.rewards"
             :pokemonImg="'/styles/' + item.img"
+            :rank="item.from"
           />
         </v-col>
       </v-row>

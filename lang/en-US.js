@@ -63,7 +63,19 @@ export default {
     energyPillow: "A specially made pillow that restores 50 Energy to a single helper Pokémon.",
     dreamClusterL: "A mysterious mass that sparkles brilliantly. It can be exchanged for ? Dream Shards.Value varies based on Rank.",
   },
+  berriesList: {
+    berries: "Berries",
+    search: "Type to filter by berry name."
+  },
+  berries:{
+    belueBerry: "This glossy and colorful Berry has a mouthwateringly delicious appearance. However, it's awfully sour.",
+    blukBerry: "Though this small, delicately skinned Berry is blue in color, it dyes the mouth black when eaten.",
+    durinBerry: "This Berry is tremendously bitter. Just one bite is enough to instantly stop hiccups."
+  },
   sleepStyle:{
-    styles: "Estilos"
+    styles: "Styles",
+    locations: "Location",
+    from: "From rank",
+    rewards: "Rewards"
   }
 };

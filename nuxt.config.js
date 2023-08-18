@@ -74,6 +74,8 @@ export default {
           grass: '#4D9358',
           fire: '#D8483F',
           water: '#458EC3',
+          steel: '#1C5E81',
+          ghost: '#5A3A5E',
           dozing: '#DAC865',
           snoozing: '#64c9c8',
           slumbering: '#5F95EB'

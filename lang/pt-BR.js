@@ -63,7 +63,19 @@ export default {
     energyPillow: "Um travesseiro feito especialmente que restaura 50 de energia para um único Pokémon ajudante.",
     dreamClusterL: "Uma massa misteriosa que brilha brilhantemente. Pode ser trocado por x Dream Shards. O valor varia de acordo com o Rank.",
   },
+  berriesList: {
+    berries: "Frutas",
+    search: "Digite para filtrar pelo nome da fruta."
+  },
+  berries:{
+    belueBerry: "Esta fruta brilhante e colorida tem uma aparência deliciosa de dar água na boca. No entanto, é terrivelmente azeda.",
+    blukBerry: "Embora esta fruta pequena e de pele delicada seja de cor azul, ela tinge a boca de preto quando comida.",
+    durinBerry: "Esta fruta é tremendamente amarga. Apenas uma mordida é suficiente para parar instantaneamente os soluços."
+  },
   sleepStyle:{
-    styles: "Estilos"
+    styles: "Estilos",
+    locations: "Localização",
+    from: "A partir do rank",
+    rewards: "Recompensas"
   }
 };
