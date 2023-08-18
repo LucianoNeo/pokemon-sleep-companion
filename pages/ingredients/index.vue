@@ -4,14 +4,14 @@
       <v-btn plain @click="$router.push('/')">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
-      <h3 class="text-uppercase zindex">{{ $t('berriesList.berries') }}</h3>
+      <h3 class="text-uppercase zindex">{{ $t('ingredientList.ingredients') }}</h3>
     </div>
     <div class="mt-4 mx-0 d-flex justify-center align-center">
       <v-col cols="12">
         <v-text-field
           solo
           prepend-inner-icon="mdi-magnify"
-          :placeholder="$t('berriesList.search')"
+          :placeholder="$t('ingredientList.search')"
           v-model="searchText"
         />
         <v-row class="d-flex justify-center cardsContainer">
@@ -20,14 +20,13 @@
             sm="12"
             md="4"
             class="d-flex justify-center align-center"
-            v-for="(berry, index) in filteredBerryList"
-            :key="index"
+            v-for="(ingredient, key) in ingredients"
+            :key="key"
           >
-            <BerryCard
-              :berryName="berry.name"
-              :berryImg="berry.img"
-              :berryType="berry.type"
-              :berryDescription="$t('berries.' + berry.description)"
+            <IngredientCard
+              :ingredientName="ingredient.name"
+              :ingredientImg="ingredient.img"
+              :ingredientDescription="$t('ingredients.' + ingredient.description)"
             />
           </v-col>
         </v-row>
@@ -37,22 +36,23 @@
 </template>
 
 <script>
-import berries from '@/data/berries'
+import ingredients from '@/data/ingredients'
 
 export default {
   data() {
     return {
-      berryList: berries,
+      ingredients: ingredients,
       searchText: '',
     }
   },
   computed: {
-    filteredBerryList() {
-      const searchText = this.searchText.toLowerCase().trim()
-      return this.berryList.filter((berry) => {
-        return berry.name.toLowerCase().includes(searchText)
-      })
-    },
+    filteredIngredientList() {
+      const searchText = this.searchText.toLowerCase().trim();
+      return Object.keys(this.ingredients).filter((key) => {
+        const ingredient = this.ingredients[key];
+        return ingredient.name.toLowerCase().includes(searchText);
+      });
+    }
   },
 }
 </script>

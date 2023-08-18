@@ -81,7 +81,7 @@ const pokemonList = [
     berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
-      ingredients.honey,
+      ingredients.largeLeek,
       ingredients.softPotato,
       ingredients.snoozyTomato,
     ],
@@ -193,7 +193,7 @@ const pokemonList = [
     berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
-      ingredients.honey,
+      ingredients.largeLeek,
       ingredients.softPotato,
       ingredients.snoozyTomato,
     ],

@@ -18,10 +18,10 @@
           <HomeButton buttonImg="/berries/grepaberry.png" :buttonText="$t('home.berries')"  variant="1" goto="/berries"/>
         </v-col>
         <v-col cols="4" class="d-flex justify-center align-center">
-          <HomeButton buttonImg="/ingredients/fancyapple.png" :buttonText="$t('home.ingredients')"  variant="5"/>
+          <HomeButton buttonImg="/ingredients/fancyapple.png" :buttonText="$t('home.ingredients')"  variant="5" goto="/ingredients"/>
         </v-col>
         <v-col cols="4" class="d-flex justify-center align-center">
-          <HomeButton buttonImg="/incenses/focusincense.png" :buttonText="$t('home.incenses')"  variant="6"/>
+          <HomeButton buttonImg="/incenses/focusincense.png" :buttonText="$t('home.incenses')"  variant="6" goto="/incenses"/>
         </v-col>
       </v-row>
 

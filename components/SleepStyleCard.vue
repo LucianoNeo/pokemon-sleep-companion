@@ -1,20 +1,25 @@
 <template>
   <div class="card">
-    <div class="blue rounded-t px-4 py-2">
-      <h4>{{ name }}</h4>
+    <div class="d-flex blue rounded-t px-4 py-2 justify-space-between align-center">
+      <div>
+        <h4>{{ name }}</h4>
+      </div>
+      <div>
+        <img src="/items/dreamclusterl.png" alt="" width="38" v-for="index in stars" :key="index">
+      </div>
     </div>
     <div class="d-flex primary rounded-b content">
       <v-col cols="3">
         <img :src="pokemonImg" width="180" />
       </v-col>
       <v-col cols="4" class="d-flex flex-column align-start">
-        <h3>{{$t('sleepStyle.locations')}}</h3>
+        <h3>{{ $t('sleepStyle.locations') }}</h3>
         <span>{{ location }}</span>
-        <h3>{{$t('sleepStyle.from')}}</h3>
+        <h3>{{ $t('sleepStyle.from') }}</h3>
         <span>{{ rank }}</span>
       </v-col>
       <v-col cols="5">
-        <h3>{{$t('sleepStyle.rewards')}}</h3>
+        <h3>{{ $t('sleepStyle.rewards') }}</h3>
         <ul>
           <li v-for="(item, index) in rewards" :key="index">{{ item }}</li>
         </ul>
@@ -42,6 +47,10 @@ export default {
       type: String,
       required: true,
     },
+    stars: {
+      type: Number,
+      required: true,
+    },
     rewards: {
       type: Array[String],
       required: true,
@@ -54,23 +63,21 @@ export default {
   width: 100%;
 }
 
-.content
-{
+.content {
   height: 150px;
 }
 
-img {
-    transform: translate(-35px,-20px);
-  }
+.content img {
+  transform: translate(-35px, -20px);
+}
 
 @media (max-width: 767px) {
   img {
     transform: translateX(-50px);
   }
 
-  .content
-{
-  height: 200px;
-}
+  .content {
+    height: 200px;
+  }
 }
 </style>
