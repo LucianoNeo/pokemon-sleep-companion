@@ -35,7 +35,7 @@ export default {
 
 
 .card {
-  width: 100%;
+  width: 100vw;
   min-height: 120px;
   margin: 10px;
 }

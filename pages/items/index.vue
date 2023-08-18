@@ -1,12 +1,12 @@
 <template>
-  <section class="mt-4 ">
-    <div class="d-flex flex-column ">
-      <div class="d-flex">
-        <v-btn plain @click="$router.push('/')">
-          <v-icon>mdi-arrow-left</v-icon>
-        </v-btn>
-        <h3 class="text-uppercase zindex">{{ $t('itemList.items') }}</h3>
-      </div>
+  <div class="mt-4 d-flex flex-column">
+    <div class="d-flex">
+      <v-btn plain @click="$router.push('/')">
+        <v-icon>mdi-arrow-left</v-icon>
+      </v-btn>
+      <h3 class="text-uppercase zindex">{{ $t('itemList.items') }}</h3>
+    </div>
+    <div class="mt-4 mx-0 d-flex justify-center align-center">
       <v-col cols="12">
         <v-text-field
           solo
@@ -14,8 +14,7 @@
           :placeholder="$t('itemList.search')"
           v-model="searchText"
         />
-      </v-col>
-        <v-row class="cardsContainer">
+        <v-row class="d-flex justify-center cardsContainer">
           <v-col
             lg="4"
             sm="12"
@@ -31,8 +30,9 @@
             />
           </v-col>
         </v-row>
+      </v-col>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -56,14 +56,14 @@ export default {
 }
 </script>
 <style scoped>
-
 .cardsContainer {
-  display: flex;
+  height: 100%;
+  margin: 0 !important;
 }
 
 @media (max-width: 767px) {
   .cardsContainer {
-    flex-direction: column;
+    max-width: 100%;
     height: 70vh;
     overflow-y: auto;
   }

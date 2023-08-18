@@ -51,7 +51,7 @@
 
     <div class="mb-4">
       <SectionTitle :title="$t('sleepStyle.styles')" />
-      <div class="cardsContainer">
+      <v-row class="d-flex justify-center cardsContainer">
         <v-col
           lg="4"
           sm="12"
@@ -67,7 +67,7 @@
             :pokemonImg="'/styles/' + item.img"
           />
         </v-col>
-      </div>
+      </v-row>
     </div>
   </section>
 </template>
@@ -151,14 +151,13 @@ export default {
 }
 
 .cardsContainer {
-  width: 100%;
-  display: flex;
   height: 100%;
+  margin: 0 !important;
 }
 
 @media (max-width: 767px) {
   .cardsContainer {
-    flex-direction: column;
+    max-width: 100%;
     height: 70vh;
     overflow-y: auto;
   }

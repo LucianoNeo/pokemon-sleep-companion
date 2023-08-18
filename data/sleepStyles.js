@@ -32,7 +32,7 @@ const sleepStyles = {
       dreamShards: '1491 Dream Shards',
       candy: '8 candie(s)',
     },
-    img: '',
+    img: 'unknown_300.png',
   },
   atopBelly: {
     name: 'Atop-Belly Sleep',
@@ -43,7 +43,7 @@ const sleepStyles = {
       dreamShards: '1491 Dream Shards',
       candy: '8 candie(s)',
     },
-    img: '',
+    img: 'unknown_300.png',
   },
 }
 
