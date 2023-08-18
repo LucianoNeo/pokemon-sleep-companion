@@ -47,7 +47,7 @@
       </div>
     </div>
     <SectionTitle title="Pokémon que fornecem" />
-    <div class="mons-container mt-10">
+    <div class="mons-container my-10">
       <div
         v-for="(pokemon, index) in filteredPokemonList"
         :key="index"
@@ -115,7 +115,7 @@ export default {
 .pokemonImg {
   object-fit: cover;
   width: 150px;
-  transform: translate(15px, -15px);
+  transform: translate(5px, -5px);
 }
 .w-full {
   width: 100%;
@@ -164,8 +164,8 @@ export default {
 }
 
 .mon-img-container {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   overflow: hidden;
   border-radius: 100%;
   display: flex;

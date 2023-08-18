@@ -5,7 +5,7 @@
         <Nuxt />
     </v-main>
     <v-footer class="justify-center">
-      <span>By LucianoNeo &copy; {{ new Date().getFullYear() }} v0.65</span>
+      <span>By LucianoNeo &copy; {{ new Date().getFullYear() }} v0.75</span>
     </v-footer>
   </v-app>
 </template>
