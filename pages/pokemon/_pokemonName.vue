@@ -2,7 +2,7 @@
   <div class="mt-8">
     <div class="align-center d-flex justify-space-between">
       <div class="d-flex justify-center align-center">
-        <v-btn plain @click="$router.push('/pokemon')">
+        <v-btn plain @click="$router.back()">
           <v-icon>mdi-arrow-left</v-icon>
         </v-btn>
         <h3 class="text-uppercase zindex">{{ pokemon.name }}</h3>

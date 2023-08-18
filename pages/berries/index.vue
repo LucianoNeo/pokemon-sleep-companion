@@ -1,6 +1,6 @@
 <template>
   <div class="mt-4 d-flex flex-column">
-    <div class="d-flex">
+    <div class="d-flex align-center ">
       <v-btn plain @click="$router.push('/')">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>

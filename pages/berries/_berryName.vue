@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="mb-4">
+    <div >
       <SectionTitle title="Força Base" />
       <div class="d-flex align-center justify-center rounded">
         <v-data-table
@@ -46,12 +46,12 @@
         </v-data-table>
       </div>
     </div>
-    <SectionTitle title="Pokémon que fornecem esta fruta" />
+    <SectionTitle title="Pokémon que fornecem" />
     <div class="mons-container mt-10">
       <div
         v-for="(pokemon, index) in filteredPokemonList"
         :key="index"
-        class="align-center justify-center d-flex flex-column mr-6"
+        class="align-center justify-center d-flex flex-column mx-3"
       >
         <div class="mon-img-container" :class="pokemon.type.name">
           <img :src="pokemon.img" :alt="pokemon.name" class="pokemonImg"

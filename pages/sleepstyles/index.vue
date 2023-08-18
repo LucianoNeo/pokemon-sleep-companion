@@ -4,7 +4,7 @@
       <v-btn plain @click="$router.push('/')">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
-      <h2>Pokémon</h2>
+      <h2>{{ $t('sleepStyle.styles')}}</h2>
     </div>
     <div class="mt-4 mx-0 d-flex justify-center align-center" >
       <v-col cols="12">
