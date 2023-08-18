@@ -1,5 +1,6 @@
 <template>
   <v-row
+    @click="$router.push('/berries/' + berryName)"
     class="rounded-xl card primary justify-center align-center py-2"
     :class="berryType"
   >
@@ -10,12 +11,12 @@
       cols="10"
       class="d-flex flex-column justify-space-between align-start"
     >
-      <v-row class="justify-space-between content">
+      <v-row class="justify-space-between content align-center">
         <v-col cols="10">
           <h4 class="font-weight-bold">{{ berryName }}</h4>
           <span>{{ berryDescription }}</span>
         </v-col>
-        <v-col cols="2">
+        <v-col cols="2" class="d-flex align-content-start justify-start">
           <img :src="'/types/' + berryType + '.png'" width="30" height="30" />
         </v-col>
       </v-row>
@@ -49,6 +50,7 @@ export default {
 .card {
   width: 100vw;
   margin: 1px;
+  cursor: pointer;
 }
 
 span {
@@ -57,6 +59,6 @@ span {
 
 .content {
   width: 100%;
-  min-height: 120px;
+  min-height: 150px;
 }
 </style>
