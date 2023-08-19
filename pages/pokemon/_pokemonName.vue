@@ -2,7 +2,7 @@
   <div class="mt-8">
     <div class="align-center d-flex justify-space-between">
       <div class="d-flex justify-center align-center">
-        <v-btn plain @click="$router.push('/pokemon')">
+        <v-btn plain @click="$router.back()">
           <v-icon>mdi-arrow-left</v-icon>
         </v-btn>
         <h3 class="text-uppercase zindex">{{ pokemon.name }}</h3>
@@ -59,7 +59,7 @@
             <v-tooltip bottom>
               <template v-slot:activator="{ on, attrs }">
                 <img
-                  :src="pokemon.berry.img"
+                  :src="pokemon.berry[0].img"
                   alt=""
                   srcset=""
                   width="38"
@@ -68,7 +68,7 @@
                   v-on="on"
                 />
               </template>
-              <span>{{ pokemon.berry.name }}</span>
+              <span>{{ pokemon.berry[0].name}}</span>
             </v-tooltip>
           </div>
         </li>

@@ -22,7 +22,7 @@ const pokemonList = [
     frienshipPoints: 5,
     recruitXP: 18,
     recruitShards: 39,
-    berry: berries.durin,
+    berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
       ingredients.honey,
@@ -50,7 +50,7 @@ const pokemonList = [
     frienshipPoints: 5,
     recruitXP: 18,
     recruitShards: 39,
-    berry: berries.durin,
+    berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
       ingredients.honey,
@@ -78,7 +78,7 @@ const pokemonList = [
     frienshipPoints: 5,
     recruitXP: 18,
     recruitShards: 39,
-    berry: berries.durin,
+    berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
       ingredients.honey,
@@ -106,7 +106,7 @@ const pokemonList = [
     frienshipPoints: 5,
     recruitXP: 18,
     recruitShards: 39,
-    berry: berries.durin,
+    berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
       ingredients.honey,
@@ -134,7 +134,7 @@ const pokemonList = [
     frienshipPoints: 5,
     recruitXP: 18,
     recruitShards: 39,
-    berry: berries.durin,
+    berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
       ingredients.honey,
@@ -162,7 +162,7 @@ const pokemonList = [
     frienshipPoints: 5,
     recruitXP: 18,
     recruitShards: 39,
-    berry: berries.durin,
+    berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
       ingredients.honey,
@@ -190,7 +190,7 @@ const pokemonList = [
     frienshipPoints: 5,
     recruitXP: 18,
     recruitShards: 39,
-    berry: berries.durin,
+    berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
       ingredients.honey,
@@ -218,7 +218,7 @@ const pokemonList = [
     frienshipPoints: 5,
     recruitXP: 18,
     recruitShards: 39,
-    berry: berries.durin,
+    berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
       ingredients.honey,
@@ -246,7 +246,7 @@ const pokemonList = [
     frienshipPoints: 5,
     recruitXP: 18,
     recruitShards: 39,
-    berry: berries.durin,
+    berry: berries.filter((berry) => berry.name == 'Durin Berry'),
     skill: skills.ingredientMagnetS,
     ingredients: [
       ingredients.honey,
