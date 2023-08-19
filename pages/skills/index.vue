@@ -1,55 +1,58 @@
 <template>
   <div class="mt-4 d-flex flex-column">
-    <div class="d-flex">
+    <div class="d-flex align-center ">
       <v-btn plain @click="$router.push('/')">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
-      <h3 class="text-uppercase zindex">{{ $t('ingredientList.ingredients') }}</h3>
+      <h3 class="text-uppercase zindex">{{ $t('skillsList.skills') }}</h3>
     </div>
     <div class="mt-4 mx-0 d-flex justify-center align-center">
-      <v-col cols="12">
+      <v-col cols="12" class="pa-0 ma-0">
         <v-text-field
           solo
           prepend-inner-icon="mdi-magnify"
-          :placeholder="$t('ingredientList.search')"
+          :placeholder="$t('skillsList.search')"
           v-model="searchText"
+          class="mx-4"
         />
-        <v-row class="d-flex justify-center cardsContainer">
+        <SectionTitle :title="$t('skillsList.mainSkill')" />
+        <v-row class="d-flex justify-center cardsContainer mt-2">
           <v-col
             lg="4"
             sm="12"
             md="4"
             class="d-flex justify-center align-center"
-            v-for="(ingredient, index) in filteredIngredientList"
-            :key="index"
+            v-for="(skill, key) in filteredSkillsList"
+            :key="key"
           >
-            <IngredientCard
-              :ingredientName="ingredient.name"
-              :ingredientImg="ingredient.img"
-              :ingredientDescription="$t('ingredients.' + ingredient.description)"
+            <SkillCard
+              :skillName="skill.name"
+              :skillDescription="$t('skills.' + skill.description)"
+              :skillImg="skill.img"
             />
           </v-col>
         </v-row>
+        <SectionTitle :title="$t('skillsList.subSkill')" />
       </v-col>
     </div>
   </div>
 </template>
 
 <script>
-import ingredients from '@/data/ingredients'
+import skills from '@/data/skills'
 
 export default {
   data() {
     return {
-      ingredients: ingredients,
+      skillList: skills,
       searchText: '',
     }
   },
   computed: {
-    filteredIngredientList() {
+    filteredSkillsList() {
       const searchText = this.searchText.toLowerCase().trim()
-      return this.ingredients.filter((ingredient) => {
-        return ingredient.name.toLowerCase().includes(searchText)
+      return this.skillList.filter((skill) => {
+        return skill.name.toLowerCase().includes(searchText)
       })
     },
   },

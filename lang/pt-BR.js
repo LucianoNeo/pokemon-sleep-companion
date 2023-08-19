@@ -10,8 +10,16 @@ export default {
     islands: 'Ilhas',
     shopItems: 'Items da Loja',
   },
+  skillsList:{
+    skills: 'Habilidades',
+    search: 'Digite para pesquisar pelo nome da habilidade',
+    mainSkill: 'Habilidades Principais',
+    subSkill: 'Habilidades Secundárias'
+  },
   skills: {
     ingredientMagnetS: 'Obtém 6 ingredientes escolhidos aleatoriamente.',
+    chargeStrengthS: 'Increases Snorlax Strength by 400.',
+    chargeStrengthM: 'Increases Snorlax Strength by 880.',
   },
   pokemonList: {
     search:

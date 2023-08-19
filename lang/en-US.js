@@ -10,6 +10,12 @@ export default {
     islands: 'Islands',
     shopItems: 'Shop Itens',
   },
+  skillsList:{
+    skills: 'Skills',
+    search: 'Type to filter by skill name.',
+    mainSkill: 'Main Skills',
+    subSkill: 'Sub Skills'
+  },
   skills: {
     ingredientMagnetS: 'Gets you 6 ingredients chosen at random.',
   },

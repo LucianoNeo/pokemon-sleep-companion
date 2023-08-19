@@ -27,7 +27,7 @@
 
       <v-row>
         <v-col cols="4" class="d-flex justify-center align-center">
-          <HomeButton buttonImg="/items/subskillseed.png" :buttonText="$t('home.skills')" variant="7"/>
+          <HomeButton buttonImg="/items/subskillseed.png" :buttonText="$t('home.skills')" variant="7" goto="/skills"/>
         </v-col>
         <v-col cols="4" class="d-flex justify-center align-center">
           <HomeButton buttonImg="/dishes/mixedcurry.png" :buttonText="$t('home.dishes')" variant="6"/>
