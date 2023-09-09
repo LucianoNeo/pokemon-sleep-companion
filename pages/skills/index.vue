@@ -1,6 +1,6 @@
 <template>
   <div class="mt-4 d-flex flex-column">
-    <div class="d-flex align-center ">
+    <div class="d-flex align-center">
       <v-btn plain @click="$router.push('/')">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
@@ -33,6 +33,19 @@
           </v-col>
         </v-row>
         <SectionTitle :title="$t('skillsList.subSkill')" />
+        <div class="d-flex align-center justify-center rounded">
+          <v-data-table
+            :headers="headers"
+            :items="subSkills"
+            item-key="Name"
+            class="table"
+            hide-default-footer
+          >
+            <template v-slot:item.Description="{ item }">
+              {{ $t('subSkills.'+item.Description) }}
+            </template>
+          </v-data-table>
+        </div>
       </v-col>
     </div>
   </div>
@@ -40,12 +53,39 @@
 
 <script>
 import skills from '@/data/skills'
-
+import subSkills from '~/data/subSkills'
 export default {
   data() {
     return {
       skillList: skills,
+      subSkills: subSkills,
       searchText: '',
+      headers: [
+        {
+          text: 'Nome',
+          value: 'Name',
+          sortable: false,
+          align: 'center',
+        },
+        {
+          text: 'Descrição',
+          value: 'Description',
+          sortable: false,
+          align: 'center',
+        },
+        {
+          text: 'Raridade',
+          value: 'Rarity',
+          sortable: false,
+          align: 'center',
+        },
+        {
+          text: 'Atualizavel para',
+          value: 'UpgradableTo',
+          sortable: false,
+          align: 'center',
+        },
+      ],
     }
   },
   computed: {
@@ -63,12 +103,21 @@ export default {
   height: 100%;
   margin: 0 !important;
 }
+.table {
+  width: 80vw;
+  margin: 16px;
+}
 
 @media (max-width: 767px) {
   .cardsContainer {
     max-width: 100%;
     height: 70vh;
     overflow-y: auto;
+  }
+
+  .table {
+    width: 100vw;
+    margin: 16px 0 16px 0;
   }
 }
 </style>

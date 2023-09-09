@@ -1,68 +1,59 @@
-# poke-sleep
+# Pokémon Sleep Companion
 
-## Build Setup
+![logo](https://github.com/LucianoNeo/pokemon-sleep-companion/assets/16579699/43f1010b-b151-491d-8372-6c9a1941dbc2)
 
-```bash
-# install dependencies
-$ yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Descrição do Projeto
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+O **Pokémon Sleep Companion** é um web app projetado para fornecer informações essenciais para jogadores de Pokémon Sleep. Este aplicativo facilita o acesso a detalhes sobre os Pokémon disponíveis, as frutas e ingredientes que eles fornecem, os tipos de sono que cada Pokémon possui, as receitas que podem ser feitas com cada ingrediente e os diversos itens disponíveis no jogo. Tudo isso em uma interface intuitiva e de fácil navegação.
 
-# generate static project
-$ yarn generate
-```
+## Tecnologias Utilizadas
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+- Framework: Nuxt.js
+- Componentes: Vuetify
+- Internacionalização: I18n
 
-## Special Directories
+## Recursos Principais
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+- Lista de Pokémon disponíveis e suas informações associadas.
+- Catálogo de frutas, ingredientes e detalhes das receitas.
+- Catálogo de itens e suas funcionalidades.
+- Suporte a múltiplos idiomas para alcance global.
 
-### `assets`
+## Capturas de Tela
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+![Screenshot_2](https://github.com/LucianoNeo/pokemon-sleep-companion/assets/16579699/af73e4ec-571b-4ca5-9b68-fd64c03b918f)
+![Screenshot_3](https://github.com/LucianoNeo/pokemon-sleep-companion/assets/16579699/601655cf-ca2f-47b6-9e9b-1515d440ff38)
+![Screenshot_4](https://github.com/LucianoNeo/pokemon-sleep-companion/assets/16579699/27708e03-397b-461f-b3e8-1808634dab4b)
+![Screenshot_5](https://github.com/LucianoNeo/pokemon-sleep-companion/assets/16579699/0f220c67-64d0-4e01-8ff0-ea8067c2abac)
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
-### `components`
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+## Instalação
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+Para executar o Pokémon Sleep Companion localmente, siga estas etapas:
 
-### `layouts`
+1. Clone o repositório: `git clone https://github.com/LucianoNeo/pokemon-sleep-companion.git`
+2. Instale as dependências: `npm install`
+3. Inicie o servidor de desenvolvimento: `npm run dev`
+4. Acesse o aplicativo em `http://localhost:3000`
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+## Uso
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+Para acessar o Pokémon Sleep Companion, basta visitar o [site oficial](https://pokemon-sleep-companion.vercel.app/).
 
-### `pages`
+## Contribuição
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+Você pode contribuir para o desenvolvimento deste projeto abrindo Pull Requests no [repositório GitHub](https://github.com/LucianoNeo/pokemon-sleep-companion).
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+## Autor
 
-### `plugins`
+- **Lucianoi dos Santos Bueno** - [LinkedIn](https://www.linkedin.com/in/lucianoneo/)
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+## Licença
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+Este projeto é licenciado sob a licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
 
-### `static`
+## Status do Projeto (09/09/23)
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+O Pokémon Sleep Companion está em desenvolvimento contínuo e está próximo de alcançar a versão 1.0.

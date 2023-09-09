@@ -10,14 +10,66 @@ export default {
     islands: 'Islands',
     shopItems: 'Shop Itens',
   },
-  skillsList:{
+  skillsList: {
     skills: 'Skills',
     search: 'Type to filter by skill name.',
     mainSkill: 'Main Skills',
-    subSkill: 'Sub Skills'
+    subSkill: 'Sub Skills',
   },
   skills: {
+    chargeStrengthS: "Increases Snorlax's Strength by 400.",
+    chargeStrengthM: "Increases Snorlax's Strength by 880.",
+    dreamShardMagnetS: 'Obtain 88 Dream Shards.',
+    energizingCheerS: 'Restores 14 Energy to another Pokémon chosen at random.',
+    chargeStrengthS:
+      "Increases Snorlax's Strength by anywhere from 200 to 800.",
+    dreamShardMagnetS: 'Obtain 44 to 176 Dream Shards.',
+    chargeEnergyS: 'Restores 12 Energy to the user.',
+    energyForEveryoneS:
+      'Restores 5 Energy to each helper Pokémon on your team.',
+    extraHelpfulS:
+      'Instantly gets you x4 the usual help from a helper Pokémon.',
     ingredientMagnetS: 'Gets you 6 ingredients chosen at random.',
+    cookingPowerUpS:
+      'Gives your pot room for 7 more ingredients next time you cook.',
+    metronome: 'Uses one randomly chosen main skill.',
+  },
+  subSkills: {
+    berryFindingS:
+      'Increases the number of Berries this Pokémon finds at one time by 1.',
+    dreamShardBonus:
+      'Boosts the number of Dream Shards you earn from sleep research by 6%.',
+    energyRecoveryBonus:
+      'Multiplies the Energy the team recovers from sleep sessions by 1.12.',
+    energyRecoveryM:
+      'Boosts the Energy this Pokémon recovers from sleep sessions by %.',
+    energyRecoveryS:
+      'Boosts the Energy this Pokémon recovers from sleep sessions by %.',
+    helpingBonus: 'Reduces the time needed by team members to help out by 5%.',
+    helpingSpeedM:
+      'Reduces the time needed for this Pokémon to help out by 14%.',
+    helpingSpeedS:
+      'Reduces the time needed for this Pokémon to help out by 7%.',
+    ingredientFinderM:
+      'Boosts the likelihood of this Pokémon finding ingredients by 36%.',
+    ingredientFinderS:
+      'Slightly boosts the likelihood of this Pokémon finding ingredients by 18%.',
+    inventoryUpL:
+      'Increases the max number of Berries and ingredients this Pokémon can have by 18.',
+    inventoryUpM:
+      'Increases the max number of Berries and ingredients this Pokémon can have by 12.',
+    inventoryUpS:
+      'Increases the max number of Berries and ingredients this Pokémon can have by 6.',
+    researchEXPBonus:
+      'Boosts the EXP you earn from doing sleep research by 6%.',
+    skillLevelUpM: "Boosts the level of this Pokémon's main skill by 2.",
+    skillLevelUpS: "Boosts the level of this Pokémon's main skill by 1.",
+    skillTriggerM:
+      "Boosts the chance of this Pokémon's main skill being used by 36%.",
+    skillTriggerS:
+      "Slightly boosts the chance of this Pokémon's main skill being used by 18%.",
+    sleepEXPBonus:
+      'Boosts the EXP earned by the team after sleep sessions by 14%.',
   },
   pokemonList: {
     search:

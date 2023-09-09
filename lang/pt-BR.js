@@ -10,16 +10,69 @@ export default {
     islands: 'Ilhas',
     shopItems: 'Items da Loja',
   },
-  skillsList:{
+  skillsList: {
     skills: 'Habilidades',
     search: 'Digite para pesquisar pelo nome da habilidade',
     mainSkill: 'Habilidades Principais',
-    subSkill: 'Habilidades Secundárias'
+    subSkill: 'Habilidades Secundárias',
   },
   skills: {
+    chargeStrengthS: 'Aumenta a Força do Snorlax em 400.',
+    chargeStrengthM: 'Aumenta a Força do Snorlax em 880.',
+    dreamShardMagnetS: 'Obtém 88 Fragmentos de Sonho.',
+    energizingCheerS:
+      'Restaura 14 Energia para outro Pokémon escolhido aleatoriamente.',
+    chargeStrengthS: 'Aumenta a Força do Snorlax entre 200 a 800.',
+    dreamShardMagnetS: 'Obtém de 44 a 176 Fragmentos de Sonho.',
+    chargeEnergyS: 'Restaura 12 Energia para o usuário.',
+    energyForEveryoneS:
+      'Restaura 5 Energia para cada Pokémon ajudante em sua equipe.',
+    extraHelpfulS:
+      'Obtém instantaneamente 4 vezes mais ajuda do que o normal de um Pokémon ajudante.',
     ingredientMagnetS: 'Obtém 6 ingredientes escolhidos aleatoriamente.',
-    chargeStrengthS: 'Increases Snorlax Strength by 400.',
-    chargeStrengthM: 'Increases Snorlax Strength by 880.',
+    cookingPowerUpS:
+      'Dá espaço para mais 7 ingredientes na sua panela na próxima vez que cozinhar.',
+    metronome: 'Usa uma habilidade principal escolhida aleatoriamente.',
+  },
+  subSkills: {
+    berryFindingS:
+      'Aumenta o número de Berries que este Pokémon encontra de uma vez em 1.',
+    dreamShardBonus:
+      'Aumenta o número de Fragmentos de Sonho que você ganha da pesquisa do sono em 6%.',
+    energyRecoveryBonus:
+      'Multiplica a energia que a equipe recupera das sessões de sono por 1.12.',
+    energyRecoveryM:
+      'Aumenta a energia que este Pokémon recupera das sessões de sono em %.',
+    energyRecoveryS:
+      'Aumenta a energia que este Pokémon recupera das sessões de sono em %.',
+    helpingBonus:
+      'Reduz o tempo necessário para que os membros da equipe prestem assistência em 5%.',
+    helpingSpeedM:
+      'Reduz o tempo necessário para que este Pokémon preste assistência em 14%.',
+    helpingSpeedS:
+      'Reduz o tempo necessário para que este Pokémon preste assistência em 7%.',
+    ingredientFinderM:
+      'Aumenta consideravelmente a probabilidade deste Pokémon encontrar ingredientes em 36%.',
+    ingredientFinderS:
+      'Aumenta levemente a probabilidade deste Pokémon encontrar ingredientes em 18%.',
+    inventoryUpL:
+      'Aumenta o número máximo de Berries e ingredientes que este Pokémon pode ter em 18.',
+    inventoryUpM:
+      'Aumenta o número máximo de Berries e ingredientes que este Pokémon pode ter em 12.',
+    inventoryUpS:
+      'Aumenta o número máximo de Berries e ingredientes que este Pokémon pode ter em 6.',
+    researchEXPBonus:
+      'Aumenta a EXP que você ganha ao fazer pesquisa de sono em 6%.',
+    skillLevelUpM:
+      'Aumenta o nível da habilidade principal deste Pokémon em 2.',
+    skillLevelUpS:
+      'Aumenta o nível da habilidade principal deste Pokémon em 1.',
+    skillTriggerM:
+      'Aumenta significativamente a chance da habilidade principal deste Pokémon ser usada em 36%.',
+    skillTriggerS:
+      'Aumenta levemente a chance da habilidade principal deste Pokémon ser usada em 18%.',
+    sleepEXPBonus:
+      'Aumenta a EXP ganha pela equipe após as sessões de sono em 14%.',
   },
   pokemonList: {
     search:
