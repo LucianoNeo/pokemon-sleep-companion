@@ -10,6 +10,7 @@ const sleepStyles = {
       dreamShards: '1491 Dream Shards',
       candy: '8 candie(s)',
     },
+    stars: 1,
     img: '1-1.png',
   },
   sturdy: {
@@ -21,6 +22,7 @@ const sleepStyles = {
       dreamShards: '1491 Dream Shards',
       candy: '8 candie(s)',
     },
+    stars: 2,
     img: '1-2.png',
   },
   vinesOut: {
@@ -32,6 +34,7 @@ const sleepStyles = {
       dreamShards: '1491 Dream Shards',
       candy: '8 candie(s)',
     },
+    stars: 3,
     img: 'unknown_300.png',
   },
   atopBelly: {
@@ -43,6 +46,7 @@ const sleepStyles = {
       dreamShards: '1491 Dream Shards',
       candy: '8 candie(s)',
     },
+    stars: 4,
     img: 'unknown_300.png',
   },
 }

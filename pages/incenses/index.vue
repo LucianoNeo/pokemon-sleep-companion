@@ -1,17 +1,17 @@
 <template>
   <div class="mt-4 d-flex flex-column">
-    <div class="d-flex">
+    <div class="d-flex align-center ">
       <v-btn plain @click="$router.push('/')">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
-      <h3 class="text-uppercase zindex">{{ $t('ingredientList.ingredients') }}</h3>
+      <h3 class="text-uppercase zindex">{{ $t('incenseList.incenses') }}</h3>
     </div>
     <div class="mt-4 mx-0 d-flex justify-center align-center">
       <v-col cols="12">
         <v-text-field
           solo
           prepend-inner-icon="mdi-magnify"
-          :placeholder="$t('ingredientList.search')"
+          :placeholder="$t('incenseList.search')"
           v-model="searchText"
         />
         <v-row class="d-flex justify-center cardsContainer">
@@ -20,13 +20,14 @@
             sm="12"
             md="4"
             class="d-flex justify-center align-center"
-            v-for="(ingredient, index) in filteredIngredientList"
+            v-for="(incense, index) in filteredIncenseList"
             :key="index"
           >
-            <IngredientCard
-              :ingredientName="ingredient.name"
-              :ingredientImg="ingredient.img"
-              :ingredientDescription="$t('ingredients.' + ingredient.description)"
+          <IncenseCard
+              :incenseName="incense.name"
+              :incenseImg="incense.img"
+              :incenseType="incense.type"
+              :incenseDescription="$t('incenses.' + incense.description)"
             />
           </v-col>
         </v-row>
@@ -36,20 +37,20 @@
 </template>
 
 <script>
-import ingredients from '@/data/ingredients'
+import incenses from '@/data/incenses'
 
 export default {
   data() {
     return {
-      ingredients: ingredients,
+      incenseList: incenses,
       searchText: '',
     }
   },
   computed: {
-    filteredIngredientList() {
+    filteredIncenseList() {
       const searchText = this.searchText.toLowerCase().trim()
-      return this.ingredients.filter((ingredient) => {
-        return ingredient.name.toLowerCase().includes(searchText)
+      return this.incenseList.filter((incense) => {
+        return incense.name.toLowerCase().includes(searchText)
       })
     },
   },

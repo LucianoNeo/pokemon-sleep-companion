@@ -1089,6 +1089,7 @@ const berries = [
       { level: 60, strength: 129 },
     ],
   },
+
   {
     name: 'Wiki Berry',
     img: '/berries/wikiberry.png',

@@ -66,6 +66,7 @@
             :rewards="item.rewards"
             :pokemonImg="'/styles/' + item.img"
             :rank="item.from"
+            :stars="item.stars"
           />
         </v-col>
       </v-row>
@@ -83,7 +84,7 @@ export default {
     const sleepStyles = pokemon.sleepStyles
     return {
       pokemon,
-      sleepStyles
+      sleepStyles,
     }
   },
   data() {

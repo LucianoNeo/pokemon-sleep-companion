@@ -1,8 +1,160 @@
-const skills = {
-  ingredientMagnetS: {
-    name: 'Ingredient Magnet S',
-    description: "ingredientMagnetS"
+const skills = [
+  {
+    name: 'Charge Strength S',
+    description: 'chargeStrengthS',
+    img: '/skills/strength_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: 400 },
+      { skillLevel: 2, baseStrength: 569 },
+      { skillLevel: 3, baseStrength: 785 },
+      { skillLevel: 4, baseStrength: 1083 },
+      { skillLevel: 5, baseStrength: 1496 },
+      { skillLevel: 6, baseStrength: 2066 },
+    ],
   },
-}
+  {
+    name: 'Charge Strength M',
+    description: 'chargeStrengthM',
+    img: '/skills/strength_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: 880 },
+      { skillLevel: 2, baseStrength: 1251 },
+      { skillLevel: 3, baseStrength: 1726 },
+      { skillLevel: 4, baseStrength: 2383 },
+      { skillLevel: 5, baseStrength: 3290 },
+      { skillLevel: 6, baseStrength: 4546 },
+    ],
+  },
+  {
+    name: 'Dream Shard Magnet S',
+    description: 'dreamShardMagnetS',
+    img: '/skills/shard_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: 88 },
+      { skillLevel: 2, baseStrength: 125 },
+      { skillLevel: 3, baseStrength: 173 },
+      { skillLevel: 4, baseStrength: 274 },
+      { skillLevel: 5, baseStrength: 395 },
+      { skillLevel: 6, baseStrength: 568 },
+    ],
+  },
+  {
+    name: 'Energizing Cheer S',
+    description: 'energizingCheerS',
+    img: '/skills/energy_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: 14 },
+      { skillLevel: 2, baseStrength: 17 },
+      { skillLevel: 3, baseStrength: 23 },
+      { skillLevel: 4, baseStrength: 29 },
+      { skillLevel: 5, baseStrength: 38 },
+      { skillLevel: 6, baseStrength: 51 },
+    ],
+  },
+  {
+    name: 'Charge Strength S (Variable)',
+    description: 'chargeStrengthS',
+    img: '/skills/strength_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: '200 - 800' },
+      { skillLevel: 2, baseStrength: '285 - 1138' },
+      { skillLevel: 3, baseStrength: '393 - 1570' },
+      { skillLevel: 4, baseStrength: '542 - 2166' },
+      { skillLevel: 5, baseStrength: '748 - 2992' },
+      { skillLevel: 6, baseStrength: '1033 - 4132' },
+    ],
+  },
+  {
+    name: 'Dream Shard Magnet S (Variable)',
+    description: 'dreamShardMagnetS',
+    img: '/skills/shard_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: '44 - 176' },
+      { skillLevel: 2, baseStrength: '63 - 250' },
+      { skillLevel: 3, baseStrength: '87 - 346' },
+      { skillLevel: 4, baseStrength: '137 - 548' },
+      { skillLevel: 5, baseStrength: '198 - 790' },
+      { skillLevel: 6, baseStrength: '284 - 1136' },
+    ],
+  },
+  {
+    name: 'Charge Energy S',
+    description: 'chargeEnergyS',
+    img: '/skills/energy_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: 12 },
+      { skillLevel: 2, baseStrength: 16 },
+      { skillLevel: 3, baseStrength: 21 },
+      { skillLevel: 4, baseStrength: 27 },
+      { skillLevel: 5, baseStrength: 34 },
+      { skillLevel: 6, baseStrength: 43 },
+    ],
+  },
+  {
+    name: 'Energy for Everyone S',
+    description: 'energyForEveryoneS',
+    img: '/skills/energy_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: 5 },
+      { skillLevel: 2, baseStrength: 7 },
+      { skillLevel: 3, baseStrength: 9 },
+      { skillLevel: 4, baseStrength: 11 },
+      { skillLevel: 5, baseStrength: 15 },
+      { skillLevel: 6, baseStrength: 18 },
+    ],
+  },
+  {
+    name: 'Extra Helpful S',
+    description: 'extraHelpfulS',
+    img: '/skills/help_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: 4 },
+      { skillLevel: 2, baseStrength: 5 },
+      { skillLevel: 3, baseStrength: 6 },
+      { skillLevel: 4, baseStrength: 7 },
+      { skillLevel: 5, baseStrength: 8 },
+      { skillLevel: 6, baseStrength: 9 },
+    ],
+  },
+  {
+    name: 'Ingredient Magnet S',
+    description: 'ingredientMagnetS',
+    img: '/skills/ingredient_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: 6 },
+      { skillLevel: 2, baseStrength: 8 },
+      { skillLevel: 3, baseStrength: 11 },
+      { skillLevel: 4, baseStrength: 14 },
+      { skillLevel: 5, baseStrength: 17 },
+      { skillLevel: 6, baseStrength: 21 },
+    ],
+  },
+  {
+    name: 'Cooking Power-Up S',
+    description: 'cookingPowerUpS',
+    img: '/skills/pot_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: 7 },
+      { skillLevel: 2, baseStrength: 10 },
+      { skillLevel: 3, baseStrength: 12 },
+      { skillLevel: 4, baseStrength: 17 },
+      { skillLevel: 5, baseStrength: 22 },
+      { skillLevel: 6, baseStrength: 27 },
+    ],
+  },
+  {
+    name: 'Metronome',
+    description: 'metronome',
+    img: '/skills/metronome_skill.png',
+    level: [
+      { skillLevel: 1, baseStrength: 'Acompanha o nível das outras habilidades'},
+      { skillLevel: 2, baseStrength: 'Acompanha o nível das outras habilidades' },
+      { skillLevel: 3, baseStrength: 'Acompanha o nível das outras habilidades' },
+      { skillLevel: 4, baseStrength: 'Acompanha o nível das outras habilidades' },
+      { skillLevel: 5, baseStrength: 'Acompanha o nível das outras habilidades' },
+      { skillLevel: 6, baseStrength: 'Acompanha o nível das outras habilidades' },
+    ],
+  },
+]
 
 export default skills

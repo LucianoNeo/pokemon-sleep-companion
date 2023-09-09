@@ -10,8 +10,69 @@ export default {
     islands: 'Ilhas',
     shopItems: 'Items da Loja',
   },
+  skillsList: {
+    skills: 'Habilidades',
+    search: 'Digite para pesquisar pelo nome da habilidade',
+    mainSkill: 'Habilidades Principais',
+    subSkill: 'Habilidades Secundárias',
+  },
   skills: {
+    chargeStrengthS: 'Aumenta a Força do Snorlax em 400.',
+    chargeStrengthM: 'Aumenta a Força do Snorlax em 880.',
+    dreamShardMagnetS: 'Obtém 88 Fragmentos de Sonho.',
+    energizingCheerS:
+      'Restaura 14 Energia para outro Pokémon escolhido aleatoriamente.',
+    chargeStrengthS: 'Aumenta a Força do Snorlax entre 200 a 800.',
+    dreamShardMagnetS: 'Obtém de 44 a 176 Fragmentos de Sonho.',
+    chargeEnergyS: 'Restaura 12 Energia para o usuário.',
+    energyForEveryoneS:
+      'Restaura 5 Energia para cada Pokémon ajudante em sua equipe.',
+    extraHelpfulS:
+      'Obtém instantaneamente 4 vezes mais ajuda do que o normal de um Pokémon ajudante.',
     ingredientMagnetS: 'Obtém 6 ingredientes escolhidos aleatoriamente.',
+    cookingPowerUpS:
+      'Dá espaço para mais 7 ingredientes na sua panela na próxima vez que cozinhar.',
+    metronome: 'Usa uma habilidade principal escolhida aleatoriamente.',
+  },
+  subSkills: {
+    berryFindingS:
+      'Aumenta o número de Berries que este Pokémon encontra de uma vez em 1.',
+    dreamShardBonus:
+      'Aumenta o número de Fragmentos de Sonho que você ganha da pesquisa do sono em 6%.',
+    energyRecoveryBonus:
+      'Multiplica a energia que a equipe recupera das sessões de sono por 1.12.',
+    energyRecoveryM:
+      'Aumenta a energia que este Pokémon recupera das sessões de sono em %.',
+    energyRecoveryS:
+      'Aumenta a energia que este Pokémon recupera das sessões de sono em %.',
+    helpingBonus:
+      'Reduz o tempo necessário para que os membros da equipe prestem assistência em 5%.',
+    helpingSpeedM:
+      'Reduz o tempo necessário para que este Pokémon preste assistência em 14%.',
+    helpingSpeedS:
+      'Reduz o tempo necessário para que este Pokémon preste assistência em 7%.',
+    ingredientFinderM:
+      'Aumenta consideravelmente a probabilidade deste Pokémon encontrar ingredientes em 36%.',
+    ingredientFinderS:
+      'Aumenta levemente a probabilidade deste Pokémon encontrar ingredientes em 18%.',
+    inventoryUpL:
+      'Aumenta o número máximo de Berries e ingredientes que este Pokémon pode ter em 18.',
+    inventoryUpM:
+      'Aumenta o número máximo de Berries e ingredientes que este Pokémon pode ter em 12.',
+    inventoryUpS:
+      'Aumenta o número máximo de Berries e ingredientes que este Pokémon pode ter em 6.',
+    researchEXPBonus:
+      'Aumenta a EXP que você ganha ao fazer pesquisa de sono em 6%.',
+    skillLevelUpM:
+      'Aumenta o nível da habilidade principal deste Pokémon em 2.',
+    skillLevelUpS:
+      'Aumenta o nível da habilidade principal deste Pokémon em 1.',
+    skillTriggerM:
+      'Aumenta significativamente a chance da habilidade principal deste Pokémon ser usada em 36%.',
+    skillTriggerS:
+      'Aumenta levemente a chance da habilidade principal deste Pokémon ser usada em 18%.',
+    sleepEXPBonus:
+      'Aumenta a EXP ganha pela equipe após as sessões de sono em 14%.',
   },
   pokemonList: {
     search:
@@ -174,5 +235,72 @@ export default {
     locations: 'Localização',
     from: 'A partir do rank',
     rewards: 'Recompensas',
+  },
+  ingredientList: {
+    ingredients: 'Ingredientes',
+    search: 'Digite para filtrar pelo nome do ingrediente.',
+  },
+  ingredients: {
+    largeleek:
+      "Se é o tipo de caule de vegetal que o Farfetch'd gosta é desconhecido.",
+    tastymushroom: 'Um cogumelo suculento com abundante sabor umami.',
+    fancyegg:
+      'Um ingrediente culinário nutritivo que combina bem com todo tipo de tempero.',
+    softpotato: 'Seu sabor suave aquece tanto o corpo quanto o espírito.',
+    fancyapple:
+      'Uma maçã escolhida entre as outras. Tem uma forma espetacular e brilho brilhante.',
+    fieryherb:
+      'O gosto ardente dessa erva vermelho-brilhante vai acordar qualquer um.',
+    beansausage:
+      'Uma salsicha saudável feita de feijão que os Pokémon gostam de comer.',
+    moomoomilk:
+      'Leite altamente nutritivo. Os Pokémon que o bebem ficam cheios de energia.',
+    honey: 'Um mel doce coletado por Pokémon.',
+    pureoil:
+      'Um óleo multiuso que pode ser usado em qualquer tipo de culinária.',
+    warmingginger:
+      'Gengibre picante que aquece o corpo melhor do que qualquer outro ingrediente.',
+    snoozytomato:
+      'Um tomate vermelho-brilhante. Coma-o e você vai dormir como um bebê.',
+    soothingcacao:
+      'Este grão de cacau é demorado para processar, mas seus efeitos calmantes valem o esforço.',
+    slowpoketail:
+      'O rabo de algo muito saboroso. Quando cai, cresce rapidamente de volta.',
+    greengrasssoybeans:
+      'Esta especialidade da Ilha Greengrass é fácil de processar em alimentos ótimos para treinamento.',
+  },
+  incenseList: {
+    incenses: 'Incensos',
+    search: 'Digite para filtrar pelo nome do incenso.',
+  },
+  incenses: {
+    focusIncense:
+      'Dobra a quantidade de EXP de pesquisa obtida após pesquisa de sono. Bom para uma sessão de sono, depois é consumido.',
+    friendIncense:
+      'Garante que pelo menos um Pokémon aparecerá durante a hora do lanche se sentindo especialmente faminto. Bom para uma sessão de sono, depois é consumido.',
+    growthIncense:
+      'Dobra a EXP que os ajudantes ganham após pesquisa de sono. Bom para uma sessão de sono, depois é consumido.',
+    luckIncense:
+      'Dobra a quantidade de Fragmentos de Sonho recebidos após pesquisa de sono. Bom para uma sessão de sono, depois é consumido.',
+    recoveryIncense:
+      'Dobra a quantidade de Energia que os ajudantes recuperam após pesquisa de sono. Bom para uma sessão de sono, depois é consumido.',
+    normalIncense: 'Atrai Pokémon do tipo Normal para o acampamento',
+    fireIncense: 'Atrai Pokémon do tipo Fogo para o acampamento',
+    waterIncense: 'Atrai Pokémon do tipo Água para o acampamento',
+    electricIncense: 'Atrai Pokémon do tipo Elétrico para o acampamento',
+    grassIncense: 'Atrai Pokémon do tipo Planta para o acampamento',
+    iceIncense: 'Atrai Pokémon do tipo Gelo para o acampamento',
+    fightingIncense: 'Atrai Pokémon do tipo Lutador para o acampamento',
+    poisonIncense: 'Atrai Pokémon do tipo Venenoso para o acampamento',
+    groundIncense: 'Atrai Pokémon do tipo Terra para o acampamento',
+    flyingIncense: 'Atrai Pokémon do tipo Voador para o acampamento',
+    psychicIncense: 'Atrai Pokémon do tipo Psíquico para o acampamento',
+    bugIncense: 'Atrai Pokémon do tipo Inseto para o acampamento',
+    rockIncense: 'Atrai Pokémon do tipo Pedra para o acampamento',
+    ghostIncense: 'Atrai Pokémon do tipo Fantasma para o acampamento',
+    dragonIncense: 'Atrai Pokémon do tipo Dragão para o acampamento',
+    darkIncense: 'Atrai Pokémon do tipo Sombrio para o acampamento',
+    steelIncense: 'Atrai Pokémon do tipo Metálico para o acampamento',
+    fairyIncense: 'Atrai Pokémon do tipo Fada para o acampamento',
   },
 }

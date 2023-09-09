@@ -10,8 +10,66 @@ export default {
     islands: 'Islands',
     shopItems: 'Shop Itens',
   },
+  skillsList: {
+    skills: 'Skills',
+    search: 'Type to filter by skill name.',
+    mainSkill: 'Main Skills',
+    subSkill: 'Sub Skills',
+  },
   skills: {
+    chargeStrengthS: "Increases Snorlax's Strength by 400.",
+    chargeStrengthM: "Increases Snorlax's Strength by 880.",
+    dreamShardMagnetS: 'Obtain 88 Dream Shards.',
+    energizingCheerS: 'Restores 14 Energy to another Pokémon chosen at random.',
+    chargeStrengthS:
+      "Increases Snorlax's Strength by anywhere from 200 to 800.",
+    dreamShardMagnetS: 'Obtain 44 to 176 Dream Shards.',
+    chargeEnergyS: 'Restores 12 Energy to the user.',
+    energyForEveryoneS:
+      'Restores 5 Energy to each helper Pokémon on your team.',
+    extraHelpfulS:
+      'Instantly gets you x4 the usual help from a helper Pokémon.',
     ingredientMagnetS: 'Gets you 6 ingredients chosen at random.',
+    cookingPowerUpS:
+      'Gives your pot room for 7 more ingredients next time you cook.',
+    metronome: 'Uses one randomly chosen main skill.',
+  },
+  subSkills: {
+    berryFindingS:
+      'Increases the number of Berries this Pokémon finds at one time by 1.',
+    dreamShardBonus:
+      'Boosts the number of Dream Shards you earn from sleep research by 6%.',
+    energyRecoveryBonus:
+      'Multiplies the Energy the team recovers from sleep sessions by 1.12.',
+    energyRecoveryM:
+      'Boosts the Energy this Pokémon recovers from sleep sessions by %.',
+    energyRecoveryS:
+      'Boosts the Energy this Pokémon recovers from sleep sessions by %.',
+    helpingBonus: 'Reduces the time needed by team members to help out by 5%.',
+    helpingSpeedM:
+      'Reduces the time needed for this Pokémon to help out by 14%.',
+    helpingSpeedS:
+      'Reduces the time needed for this Pokémon to help out by 7%.',
+    ingredientFinderM:
+      'Boosts the likelihood of this Pokémon finding ingredients by 36%.',
+    ingredientFinderS:
+      'Slightly boosts the likelihood of this Pokémon finding ingredients by 18%.',
+    inventoryUpL:
+      'Increases the max number of Berries and ingredients this Pokémon can have by 18.',
+    inventoryUpM:
+      'Increases the max number of Berries and ingredients this Pokémon can have by 12.',
+    inventoryUpS:
+      'Increases the max number of Berries and ingredients this Pokémon can have by 6.',
+    researchEXPBonus:
+      'Boosts the EXP you earn from doing sleep research by 6%.',
+    skillLevelUpM: "Boosts the level of this Pokémon's main skill by 2.",
+    skillLevelUpS: "Boosts the level of this Pokémon's main skill by 1.",
+    skillTriggerM:
+      "Boosts the chance of this Pokémon's main skill being used by 36%.",
+    skillTriggerS:
+      "Slightly boosts the chance of this Pokémon's main skill being used by 18%.",
+    sleepEXPBonus:
+      'Boosts the EXP earned by the team after sleep sessions by 14%.',
   },
   pokemonList: {
     search:
@@ -174,5 +232,70 @@ export default {
     locations: 'Location',
     from: 'From rank',
     rewards: 'Rewards',
+  },
+  ingredientList: {
+    ingredients: 'Ingredients',
+    search: 'Type to filter by ingredient name.',
+  },
+  ingredients: {
+    largeleek:
+      "Whether this is the kind of vegetable stalk that Farfetch'd like is unknown.",
+    tastymushroom: 'A juicy mushroom with an abundance of umami flavor.',
+    fancyegg:
+      'A nutritious cooking ingredient that goes well with all sorts of seasonings.',
+    softpotato:
+      'Its mellow flavor makes both body and spirit feel warm and fuzzy.',
+    fancyapple:
+      'An apple chosen above others. It has spectacular form and a brilliant sheen.',
+    fieryherb:
+      'The fiery taste of this bright-red herb will wake anyone right up.',
+    beansausage: 'A healthy sausage made from beans that Pokémon like to eat.',
+    moomoomilk:
+      'Highly nutritious milk. Pokémon that drink it become full of energy.',
+    honey: 'A sweet honey collected by Pokémon.',
+    pureoil: 'All-purpose oil that can be used in any type of cuisine.',
+    warmingginger:
+      'Spicy ginger that warms the body better than any other ingredient.',
+    snoozytomato: "A bright-red tomato. Eat it and you'll sleep like a baby.",
+    soothingcacao:
+      'This cacao bean is time-consuming to process, but its soothing effects make the effort worthwhile.',
+    slowpoketail:
+      'A very tasty tail of something. When it falls off, it grows back quickly.',
+    greengrasssoybeans:
+      'This Greengrass Isle specialty is easy to process into foods that are great for training.',
+  },
+  incenseList: {
+    incenses: 'Incenses',
+    search: 'Type to filter by incense name.',
+  },
+  incenses: {
+    focusIncense:
+      'Doubles the research EXP gained after sleep research. Good for one sleep session, then consumed.',
+    friendIncense:
+      'Ensures that at least one Pokémon will appear during snack time feeling particularly hungry. Good for one sleep session, then consumed.',
+    growthIncense:
+      'Doubles the EXP that helpers gain after sleep research. Good for one sleep session, then consumed.',
+    luckIncense:
+      'Doubles the Dream Shards received after sleep research. Good for one sleep session, then consumed.',
+    recoveryIncense:
+      'Doubles the Energy that helpers recover after sleep research. Good for one sleep session, then consumed.',
+    normalIncense: 'Attracts Normal-type Pokémon to the camp',
+    fireIncense: 'Attracts Fire-type Pokémon to the camp',
+    waterIncense: 'Attracts Water-type Pokémon to the camp',
+    electricIncense: 'Attracts Electric-type Pokémon to the camp',
+    grassIncense: 'Attracts Grass-type Pokémon to the camp',
+    iceIncense: 'Attracts Ice-type Pokémon to the camp',
+    fightingIncense: 'Attracts Fighting-type Pokémon to the camp',
+    poisonIncense: 'Attracts Poison-type Pokémon to the camp',
+    groundIncense: 'Attracts Ground-type Pokémon to the camp',
+    flyingIncense: 'Attracts Flying-type Pokémon to the camp',
+    psychicIncense: 'Attracts Psychic-type Pokémon to the camp',
+    bugIncense: 'Attracts Bug-type Pokémon to the camp',
+    rockIncense: 'Attracts Rock-type Pokémon to the camp',
+    ghostIncense: 'Attracts Ghost-type Pokémon to the camp',
+    dragonIncense: 'Attracts Dragon-type Pokémon to the camp',
+    darkIncense: 'Attracts Dark-type Pokémon to the camp',
+    steelIncense: 'Attracts Steel-type Pokémon to the camp',
+    fairyIncense: 'Attracts Fairy-type Pokémon to the camp',
   },
 }
