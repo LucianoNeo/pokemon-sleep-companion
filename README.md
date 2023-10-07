@@ -48,7 +48,7 @@ Você pode contribuir para o desenvolvimento deste projeto abrindo Pull Requests
 
 ## Autor
 
-- **Lucianoi dos Santos Bueno** - [LinkedIn](https://www.linkedin.com/in/lucianoneo/)
+- **Luciano dos Santos Bueno** - [LinkedIn](https://www.linkedin.com/in/lucianoneo/)
 
 ## Licença
 
