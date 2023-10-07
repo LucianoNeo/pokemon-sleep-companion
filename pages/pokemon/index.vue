@@ -6,7 +6,7 @@
       </v-btn>
       <h2>Pokémon</h2>
     </div>
-    <div class="mt-4 mx-0 d-flex justify-center align-center" >
+    <div class="mt-4 mx-0 d-flex justify-center align-center">
       <v-col cols="12">
         <v-text-field
           solo
@@ -47,20 +47,10 @@ export default {
   },
   computed: {
     filteredPokemonList() {
-      const searchText = this.searchText.toLowerCase().trim();
+      const searchText = this.searchText.toLowerCase().trim()
       return this.pokemonList.filter((pokemon) => {
-        return (
-          pokemon.name.toLowerCase().includes(searchText) ||
-          pokemon.number.includes(searchText) ||
-          pokemon.type.name.toLowerCase().includes(searchText) ||
-          pokemon.sleepType.toLowerCase().includes(searchText) ||
-          pokemon.speciality.toLowerCase().includes(searchText) ||
-          pokemon.berry.name.toLowerCase().includes(searchText) ||
-          pokemon.ingredients.some((ingredient) =>
-            ingredient.name.toLowerCase().includes(searchText)
-          )
-        );
-      });
+        return pokemon.name.toLowerCase().includes(searchText)
+      })
     },
   },
 }

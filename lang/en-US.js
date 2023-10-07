@@ -73,7 +73,7 @@ export default {
   },
   pokemonList: {
     search:
-      'Filter by name, number, type, sleep type, specialty, berry or ingredient',
+      'Filter by pokémon name',
   },
   pokemonDetails: {
     sleepType: 'Sleep Type',
@@ -298,4 +298,12 @@ export default {
     steelIncense: 'Attracts Steel-type Pokémon to the camp',
     fairyIncense: 'Attracts Fairy-type Pokémon to the camp',
   },
+  dishesList: {
+    dishes: 'Dishes',
+    search: 'Type to filter by dish name.',
+    curries: 'Curries',
+  },
+  dishes:{
+    fancyAppleCurry: 'A simple curry that lets the natural sweetness of its apples shine.'
+  }
 }
