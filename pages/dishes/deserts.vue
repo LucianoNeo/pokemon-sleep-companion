@@ -1,71 +1,74 @@
 <template>
-  <section class="mt-4 d-flex flex-column">
+  <div class="mt-4 d-flex flex-column">
     <div class="d-flex">
       <v-btn plain @click="$router.push('/')">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
-      <h2>{{ $t('sleepStyle.styles') }}</h2>
+      <h3 class="text-uppercase zindex">{{ $t('dishesList.deserts') }}</h3>
     </div>
     <div class="mt-4 mx-0 d-flex justify-center align-center">
       <v-col cols="12">
         <v-text-field
           solo
           prepend-inner-icon="mdi-magnify"
-          :placeholder="$t('pokemonList.search')"
+          :placeholder="$t('dishesList.search')"
           v-model="searchText"
         />
-        <v-row class="justify-center cardsContainer">
+        <v-row class="d-flex justify-center cardsContainer">
           <v-col
             lg="4"
             sm="12"
             md="4"
             class="d-flex justify-center align-center"
-            v-for="(pokemon, index) in filteredPokemonList"
+            v-for="(dish, index) in filteredDishList"
             :key="index"
           >
-            <SleepStyleListCard
-              :pokemonName="pokemon.name"
-              :pokemonNumber="pokemon.number"
-              :pokemonType="pokemon.type.name"
-              :pokemonImg="pokemon.img"
+            <DishCard
+              :dishName="dish.name"
+              :dishImg="dish.img"
+              :dishDescription="$t('dishes.' + dish.description)"
+              :dishType="dish.type"
             />
           </v-col>
         </v-row>
       </v-col>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-import pokemonList from '@/data/pokemon'
+import dishes from '@/data/dishes'
+
 export default {
   data() {
     return {
-      pokemonList: pokemonList,
+      dishes: dishes,
       searchText: '',
     }
   },
   computed: {
-    filteredPokemonList() {
+    filteredDishList() {
       const searchText = this.searchText.toLowerCase().trim()
-      return this.pokemonList.filter((pokemon) => {
-        return pokemon.name.toLowerCase().includes(searchText)
+      return this.dishes
+      .filter((dish) => {
+        return dish.type.toLowerCase().includes('desert')
+      })
+      .filter((dish) => {
+        return dish.name.toLowerCase().includes(searchText)
       })
     },
   },
 }
 </script>
 <style scoped>
-.gap {
-  gap: 1px;
-}
-
 .cardsContainer {
   height: 100%;
+  margin: 0 !important;
 }
 
 @media (max-width: 767px) {
   .cardsContainer {
+    max-width: 100%;
     height: 70vh;
     overflow-y: auto;
   }

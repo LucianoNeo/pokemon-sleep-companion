@@ -89,10 +89,15 @@ export default {
           normal: '#A8A77A',
           fairy: '#FF65A5',
           dark: '#5A5366',
-          
+
           dozing: '#DAC865',
           snoozing: '#64c9c8',
-          slumbering: '#5F95EB'
+          slumbering: '#5F95EB',
+
+          curry: '#D8483F',
+          salad: '#4D9358',
+          desert: '#458EC3',
+
         },
       },
     },

@@ -76,7 +76,7 @@ export default {
   },
   pokemonList: {
     search:
-      'Filtre por nome, número, tipo, sleep type, especialidade, berry ou ingrediente',
+      'Filtre pelo nome do pokémon',
   },
   pokemonDetails: {
     sleepType: 'Tipo de sono',
@@ -303,4 +303,12 @@ export default {
     steelIncense: 'Atrai Pokémon do tipo Metálico para o acampamento',
     fairyIncense: 'Atrai Pokémon do tipo Fada para o acampamento',
   },
+  dishesList: {
+    dishes: 'Receitas',
+    search: 'Digite para filtrar pelo nome da receita.',
+    curries: 'Curries',
+  },
+  dishes:{
+    fancyAppleCurry: 'Um curry simples que deixa brilhar a doçura natural de suas maçãs.'
+  }
 }
